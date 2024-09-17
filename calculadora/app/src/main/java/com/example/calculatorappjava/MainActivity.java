@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView = (TextView) findViewById(R.id.textView2);
 
         Button button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(this);
+        button1.setOnClickListener(buton1());
         Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(this);
+        button2.setOnClickListener(buton2());
         Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(this);
+        button3.setOnClickListener(buton3());
         Button button4 = (Button) findViewById(R.id.button4);
         button4.setOnClickListener(this);
         Button button5 = (Button) findViewById(R.id.button5);
@@ -67,30 +67,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textView.setText( "" );
                 operationDone = false;
             }
-            doOnClick (v);
+
         } catch (Exception e){
             textError.setVisibility(View.VISIBLE);
             textView.setText("");
         }
     }
-    public void doOnClick (View v) throws Exception {
-        textError.setVisibility(View.GONE);
 
-        // Las cosas no se hacen asi... pero por el momento, vale
-        switch (v.getId()){
-            case 1:          textView.setText(textView.getText().toString() + "1"); break;
-            case 2:          textView.setText(textView.getText().toString() + "2"); break;
-            case 3:          textView.setText(textView.getText().toString() + "3"); break;
-            case 4:          textView.setText(textView.getText().toString() + "4"); break;
-            case 5:          textView.setText(textView.getText().toString() + "5"); break;
-            case 6:          textView.setText(textView.getText().toString() + "6"); break;
-            case 7:          textView.setText(textView.getText().toString() + "7"); break;
-            case 8:          textView.setText(textView.getText().toString() + "8"); break;
-            case 9:          textView.setText(textView.getText().toString() + "9"); break;
-            case 0:          textView.setText(textView.getText().toString() + "0"); break;
-            case 10:         textView.setText(textView.getText().toString() + " + "); break;
-            case 11:         textView.setText(textView.getText().toString() + " - "); break;
-            case 20:         textView.setText(textView.getText().toString() + " = ");break;
-        }
+    public View.OnClickListener buton1 (){
+        textView.setText(textView.getText().toString() + "1");
+        return null;
+    }
+    public View.OnClickListener buton2 (){
+        textView.setText(textView.getText().toString() + "2");
+        return null;
+    }
+    public View.OnClickListener buton3 (){
+        textView.setText(textView.getText().toString() + "3");
+        return null;
     }
 }
