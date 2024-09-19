@@ -38,7 +38,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true, device = "id:pixel_fold")
 @Composable
 fun GreetingPreview() {
     ComposeTheme {
