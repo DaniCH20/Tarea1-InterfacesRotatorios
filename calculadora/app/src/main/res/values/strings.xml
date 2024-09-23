@@ -19,5 +19,5 @@
     <string name="buttDelete">DEL</string>
     <string name="buttAC">AC</string>
     <string name="txtTitulo">CALCULADORA</string>
-    <string name="txt">0</string>
+    <string name="txt"> </string>
 </resources>

@@ -79,10 +79,8 @@
 
     <Button
         android:id="@+id/button"
-
         android:layout_width="150px"
         android:layout_height="150px"
-
         android:backgroundTint="@color/gray"
         android:text="x²"
         android:textColor="@color/black"
