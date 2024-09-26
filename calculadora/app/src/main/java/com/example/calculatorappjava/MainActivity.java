@@ -1,6 +1,7 @@
 package com.example.calculatorappjava;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             else if (v.getId() == R.id.button11) textView.append("(");
             else if (v.getId() == R.id.button12) textView.append(")");
             else if (v.getId() == R.id.button13) textView.append("%");
-            else if (v.getId() == R.id.button20) textView.append("");
+            else if (v.getId() == R.id.button20) textView.append("=");
 
         }
 
